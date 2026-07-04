@@ -123,7 +123,13 @@ export default function Home() {
 
         <section id="founder" className="section-shell py-20">
           <div className="grid gap-10 lg:grid-cols-[0.96fr_1.04fr] lg:items-center">
-            <PlaceholderImage label={siteContent.founder.imageLabel} title={siteContent.founder.title} text={siteContent.founder.imageText} />
+            <div className="relative min-h-[420px] overflow-hidden rounded-[28px] border border-ink/10 bg-ink shadow-soft">
+              <img
+                src="/images/ahmet-canli.jpeg"
+                alt="Ahmet Canli"
+                className="h-full min-h-[420px] w-full object-cover"
+              />
+            </div>
             <div>
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-sage">{siteContent.founder.eyebrow}</p>
               <h2 className="mt-3 text-3xl font-bold text-ink sm:text-4xl">{siteContent.founder.title}</h2>
